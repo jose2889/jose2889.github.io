@@ -9,11 +9,11 @@
 // 		alert("¡Ups! No puedo obtener información de la API");
 // 	}
 // });
-$(document).ready(function (){
-	$.getJSON('city.list.json').then( function (resp){
-		console.log(resp)
-	});
-});
+// $(document).ready(function (){
+// 	$.getJSON('city.list.json').then( function (resp){
+// 		console.log(resp)
+// 	});
+// });
 
 document.getElementById('idciudad').addEventListener("change", clima);
 
