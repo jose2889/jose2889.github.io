@@ -1,0 +1,65 @@
+[
+    {
+        "id": 3646738,
+        "name": "Caracas",
+        "country": "VE",
+        "coord": {
+          "lon": -66.879189,
+          "lat": 10.48801
+        }
+      },
+      {
+        "id": 3873544,
+        "name": "Región Metropolitana de Santiago",
+        "country": "CL",
+        "coord": {
+          "lon": -70.64724,
+          "lat": -33.472691
+        }
+      },
+      {
+        "id": 3688689,
+        "name": "Bogota",
+        "country": "CO",
+        "coord": {
+          "lon": -74.081749,
+          "lat": 4.60971
+        }
+      },
+      {
+        "id": 3652462,
+        "name": "Quito",
+        "country": "EC",
+        "coord": {
+          "lon": -78.524948,
+          "lat": -0.22985
+        }
+      },
+      {
+        "id": 3435907,
+        "name": "Provincia de Buenos Aires",
+        "country": "AR",
+        "coord": {
+          "lon": -60,
+          "lat": -36
+        }
+      },
+      {
+        "id": 3441575,
+        "name": "Montevideo",
+        "country": "UY",
+        "coord": {
+          "lon": -56.167351,
+          "lat": -34.833462
+        }
+      },
+      {
+        "id": 6359304,
+        "name": "Madrid",
+        "country": "ES",
+        "coord": {
+          "lon": -3.68275,
+          "lat": 40.489349
+        }
+      }
+]
