@@ -10,8 +10,15 @@
 // 	}
 // });
 $(document).ready(function (){
+	var ciudad;
 	$.getJSON('https://jose2889.github.io/apiClima/ciudades.json').then( function (resp){
+		
+		ciudad = resp;
 		console.log(resp)
+		//vamos a iteras las ciudades para mostrarlas
+		for (c of ciudad){
+			document.getElementById('idciudad').innerHTML+=`<option value="${c.id}">${c.name}</option`;
+			}
 	});
 });
 
