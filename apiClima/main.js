@@ -9,11 +9,11 @@
 // 		alert("¡Ups! No puedo obtener información de la API");
 // 	}
 // });
-// $(document).ready(function (){
-// 	$.getJSON('city.list.json').then( function (resp){
-// 		console.log(resp)
-// 	});
-// });
+$(document).ready(function (){
+	$.getJSON('https://jose2889.github.io/apiClima/ciudades.json').then( function (resp){
+		console.log(resp)
+	});
+});
 
 document.getElementById('idciudad').addEventListener("change", clima);
 
@@ -21,7 +21,7 @@ function clima(){
 var app = {};
 var x = document.getElementById("idciudad").value;
 app.apikey = "3e721e227b5c28d8ff5691e4fff1c36e";
-app.url = "http://api.openweathermap.org/data/2.5/weather?id="+ x +"&APPID=" + app.apikey + "&units=metric";
+app.url = "https://api.openweathermap.org/data/2.5/weather?id="+ x +"&APPID=" + app.apikey + "&units=metric";
 // api.openweathermap.org/data/2.5/weather?id=2172797 por id de ciudad
 // http://api.openweathermap.org/data/2.5/group?id=524901,703448,3873544 para varias ciudades
 app.cargaDatos = function(){
