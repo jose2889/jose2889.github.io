@@ -54,6 +54,24 @@
         }
       },
       {
+        "id": 3530597,
+        "name": "Mexico City",
+        "country": "MX",
+        "coord": {
+          "lon": -99.127663,
+          "lat": 19.428471
+        }
+      },
+      {
+        "id": 2968815,
+        "name": "Paris",
+        "country": "FR",
+        "coord": {
+          "lon": 2.3486,
+          "lat": 48.853401
+        }
+      },
+      {
         "id": 6359304,
         "name": "Madrid",
         "country": "ES",
