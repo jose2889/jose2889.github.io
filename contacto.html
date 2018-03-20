@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog de Aplicaciones</title>
+    <meta name="description" content="Practicas Curso de Bootstrap Gratis">
+    <meta name="keywords" content="HTML,CSS,Bootstrap">
+    <meta name="author" content="Jose Hernandez">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- estilos css -->
+    <style>
+      .slider{
+        background: url("images/bg-3.png");
+        background-size: cover;
+        background-position: center; 
+        height: 400px;
+      }
+    </style>  
+</head>
+<body>
+    <!-- menu -->
+    <div class="container-fluid bg-dark fixed-top text-center">    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
+            <a class="navbar-brand" href="#">
+                <img src="images/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                        Bootstrap
+            </a>  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Proyectos Angular</a>
+                    <a class="nav-item nav-link" href="#">Lenguajes de programacion</a>
+                    <div><a href="#" class="btn btn-danger">Contacto</a></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- fin de menu -->
+    <!-- inicio de slaide -->
+    <div class="container-fluid slider d-flex align-items-center justify-content-center flex-column text-white">
+        <h3>¿Que quieres hacer hoy?</h3>
+        <h1 class="display-4">Recibe Noticas por correo</h1>
+        <p class="lead">Las mejores noticias de tecnologia</p>
+        <form class="form-inline">
+            <div class="form-group mb-2">
+                <input type="email" class="form-control" placeholder="Escribe tu e-mail">
+            </div>
+            <button type="submit" class="btn btn-danger ml-2 mb-2">Enviar</button>
+        </form>
+    </div>
+    <!-- inicio del main -->
+    <div class="container">
+        <h1 class="display-5">Blog</h1>
+        <p class="lead">Escrito por Jose Hernandez</p>
+        <hr>
+        <!-- iniciio de articulos -->
+        <div class="row">
+            <div class="col-12 col-md-9">
+                <div class="row mb-5">
+                    <div class="row justify-content-center mt-3 pt-3">
+                        <div class="col-md-12">
+                            <h1 class="display-4">Contactarnos</h1>
+                            <hr class="bg-info">
+                            <p class="pb-0 mb-0">Te invitamos a contactarnos, te responderemos a la brevedad</p>
+                            <p class="text-danger small pt-0 mt-0">*Todos los cambos son obligatorios</p>
+                            <!-- formulario -->
+                            <form>
+                                <div class="row form-group">
+                                    <label for="nombre" class="col-form-label col-md-4">Nombres:</label>
+                                    <div class="col-md-8">
+                                        <input type="text" name="nombre" id="nombre" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <label for="apellido" class="col-form-label col-md-4">Apellidos:</label>
+                                    <div class="col-md-8">
+                                        <input type="text" name="apellido" id="apellido" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <label for="correo" class="col-form-label col-md-4">Correo Electronico:</label>
+                                    <div class="col-md-8">
+                                        <input type="email" name="correo" id="correo" class="form-control">
+                                    </div>
+                                </div>    
+                                <div class="row form-group">
+                                    <label for="mensaje" class="col-form-label col-md-4">Mensaje:</label>
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                                    </div>
+                                </div> 
+                                <button type="submit" class="btn btn-info">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- fin de formulario -->
+            </div>
+            <!-- inicio de aside -->
+            <div class="col-12 col-md-3">
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Sobre mi...</h5>
+                      <p class="card-text">Me gustan los retos, siempre dejan nuevos aprendizaje porque no soy fanatico de un lenguaje, ni me caso con uno en particular mi pasion es por la programacion en la tecnologia mas innovadora.</p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Reflexion del dia</h5>
+                      <p class="card-text">Mas que memorizar un lenguaje es importante desarrollar la lógica para resolver problemas que tenga impacto en la sociedad, ese es nuestro perfil de carrera.</p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Sobre Angular</h5>
+                      <p class="card-text">Actualmente me encuentro desarrollando en Angular, un potente framework del lado frontend avalado por Google para el desarrollo de SPA.</p>
+                    </div>
+                  </div>
+            </div>
+            <!-- fin de aside -->
+        </div>
+    </div>
+    <!-- fin del main -->
+    <!-- inicio de footer -->
+    <div class="container-fluid bg-dark text-center text-white">
+        <P>Desarrollado por Jose Hernandez</P>
+        <p>Practica de curso de Bootstrap by Bluuweb!</p>
+    </div>
+    <!-- fin de footer -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

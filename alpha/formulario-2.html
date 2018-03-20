@@ -19,62 +19,29 @@
                 <!-- formulario -->
                 <form>
                     <div class="row form-group">
-                        <label for="nombre" class="col-form-label col-md-4">Nombre:</label>
+                        <label for="nombre" class="col-form-label col-md-4">Nombres:</label>
                         <div class="col-md-8">
                             <input type="text" name="nombre" id="nombre" class="form-control">
                         </div>
                     </div>
-                    <!-- color -->
                     <div class="row form-group">
-                        <label for="color" class="col-form-label col-md-4">Color</label>
+                        <label for="apellido" class="col-form-label col-md-4">Apellidos:</label>
                         <div class="col-md-8">
-                            <select name="color" id="color" class="form-control">
-                                <option value="verde">Verde</option>
-                                <option value="azul">Azul</option>
-                                <option value="rojo">Rojo</option>
-                            </select>
+                            <input type="text" name="apellido" id="apellido" class="form-control">
                         </div>
                     </div>
-                    <!-- check -->
                     <div class="row form-group">
-                        <label for="cursos" class="col-form-label col-md-4">Cursos</label>
+                        <label for="correo" class="col-form-label col-md-4">Correo Electronico:</label>
                         <div class="col-md-8">
-                            <!-- CAMPOS -->
-                            <div class="form-checK form-check-inline">
-                                <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" name="curso[]" value="html"> HTML 
-                                </label>
-                            
-                            <!-- CAMPOS -->
-                            <!-- CAMPOS -->
-                            
-                                <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" name="curso[]" value="css"> CSS 
-                                </label>
-                            
-                                <!-- CAMPOS -->
-                                <!-- CAMPOS -->
-                            
-                                <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" name="curso[]" value="php"> PHP 
-                                </label>
-                            </div>     <!-- CAMPOS -->
+                            <input type="email" name="correo" id="correo" class="form-control">
                         </div>
-                    </div>
-                    <!-- GENERO -->
+                    </div>    
                     <div class="row form-group">
-                        <label for="nombre" class="col-form-label col-md-4">Genero</label>
+                        <label for="mensaje" class="col-form-label col-md-4">Mensaje:</label>
                         <div class="col-md-8">
-                            <div class="form-checK form-check-inline">
-                                <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="genero" value="mujer"> Mujer 
-                                </label>
-                                <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="genero" value="hombre"> Hombre  
-                                </label>
-                            </div>                                
+                            <textarea class="form-control" id="mensaje" rows="3"></textarea>
                         </div>
-                    </div>
+                    </div> 
                     <button type="submit" class="btn btn-info">Enviar</button>
                 </form>
             </div>
