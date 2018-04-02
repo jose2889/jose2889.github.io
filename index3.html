@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog de Aplicaciones</title>
+    <meta name="description" content="Practicas Curso de Bootstrap Gratis">
+    <meta name="keywords" content="HTML,CSS,Bootstrap">
+    <meta name="author" content="Jose Hernandez">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- estilos css -->
+    <style>
+      .slider{
+        background: url("images/bg-3.png");
+        background-size: cover;
+        background-position: center; 
+        height: 400px;
+      }
+    </style>  
+</head>
+<body>
+    <!-- menu -->
+    <div class="container-fluid bg-dark fixed-top text-center">    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
+            <a class="navbar-brand" href="#">
+                <img src="images/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                        Bootstrap
+            </a>  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Proyectos Angular</a>
+                    <a class="nav-item nav-link" href="#">Lenguajes de programacion</a>
+                    <div><a href="contacto.html" class="btn btn-danger">Contacto</a></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- fin de menu -->
+    <!-- inicio de slaide -->
+    <div class="container-fluid slider d-flex align-items-center justify-content-center flex-column text-white">
+        <h3>¿Que quieres hacer hoy?</h3>
+        <h1 class="display-4">Recibe Noticas por correo</h1>
+        <p class="lead">Las mejores noticias de tecnologia</p>
+        <form class="form-inline">
+            <div class="form-group mb-2">
+                <input type="email" class="form-control" placeholder="Escribe tu e-mail">
+            </div>
+            <button type="submit" class="btn btn-danger ml-2 mb-2">Enviar</button>
+        </form>
+    </div>
+    <!-- inicio del main -->
+    <div class="container">
+        <h1 class="display-5">Blog</h1>
+        <p class="lead">Escrito por Jose Hernandez</p>
+        <hr>
+        <!-- iniciio de articulos -->
+        <div class="row">
+            <div class="col-12 col-md-9">
+                <div class="row mb-5">
+                    <div class="col-3">
+                        <img src="images/apigaleria.png" class="img-fluid" alt="">
+                        <p class="lead text-center">Marzo, 2018</p>
+                    </div>
+                    <div class="col-9">
+                        <a href="galerias/apigaleria.html"><h3>Galeria de usuarios</h3></a>
+                        <a href="#"><span class="badge badge-danger">html</span></a>
+                        <a href="#"><span class="badge badge-primary">css</span></a>
+                        <a href="#"><span class="badge badge-success">javascript</span></a>
+                        <a href="#"><span class="badge badge-primary">ApiRest</span></a>
+                        <p>En esta sección nos conectamos a una API de usuarios aleatorios y mostramos a través de un modal sus datos más relevantes</p>
+                        <p>Para este ejercicio se ocupa la última versión del framework Bootstrap.</p>
+                        <a class="btn btn-outline-warning btn-sm" href="galerias/apigaleria.html">Ver Demo</a>            
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-3">
+                        <img src="images/alpha.png" class="img-fluid" alt="">
+                        <p class="lead text-center">Marzo, 2018</p>
+                    </div>
+                    <div class="col-9">
+                        <a href="alpha/alpha.html"><h3>Maquetando Pagina web</h3></a>
+                        <a href="#"><span class="badge badge-danger">html</span></a>
+                        <a href="#"><span class="badge badge-primary">css</span></a>
+                        <a href="#"><span class="badge badge-success">bootstrap</span></a>
+                        <p>En esta sección se diseño una página Web de tipo informativa ocupando HTML5, CSS3 y Bootstrap, en la misma están los principales ingredientes de este tipo de proyectos como el carrusel, el menú fijo en la parte superior y las famosas cards muy usadas hoy en día.</p>
+                        <p>Además la página cuenta con un Diseño responsivo que te permite una mejor experiencia de usuario en los dispositivos móviles.</p>
+                        <a class="btn btn-outline-warning btn-sm" href="alpha/alpha.html">Ver Demo</a>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-3">
+                        <img src="images/clima.png" class="img-fluid" alt="">
+                        <p class="lead text-center">Marzo, 2018</p>
+                    </div>
+                    <div class="col-9">
+                        <a href="apiClima/clima.html"><h3>Consulta el clima</h3></a>
+                        <a href="#"><span class="badge badge-danger">html</span></a>
+                        <a href="#"><span class="badge badge-primary">css</span></a>
+                        <a href="#"><span class="badge badge-success">javascript</span></a>
+                        <a href="#"><span class="badge badge-warning">ApiRest</span></a>
+                        <p>Con esta pequeña aplicación puedes consultar el clima de tu ciudad en segundos y los más importante es que se puede escalar consultar más de 37mil ciudades en el mundo.</p>
+                        <p>Aunque la aplicación apenas comienza en su versión 1.0 pronto se verán nuevas funcionalidades como un histórico de las últimas temperaturas en tu ciudad o el pronóstico del tiempo, además podrás revisar las notificaciones a tu celular si así los deseas al estilo de Google.</p>
+                        <a class="btn btn-outline-warning btn-sm" href="apiClima/clima.html">Ver Demo</a>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-3">
+                        <img src="images/crudangular.png" class="img-fluid" alt="">
+                        <p class="lead text-center">Marzo, 2018</p>
+                    </div>
+                    <div class="col-9">
+                        <a href="https://tareas-angular.firebaseapp.com/"><h3>CRUD en Angular con Firebase</h3></a>
+                        <a href="#"><span class="badge badge-danger">Firebase</span></a>
+                        <a href="#"><span class="badge badge-primary">HTML</span></a>
+                        <a href="#"><span class="badge badge-success">javascript</span></a>
+                        <a href="#"><span class="badge badge-warning">Angular</span></a>
+                        <p>En esta aplicación esta la base para iniciarse en lenguaje o framework, este CRUD puede tener funcionalidades para gestionar tareas pero también puede servir como block de notas. Es el inicio para el desarrollo de aplicaciones potentes solo falta carpintería y echar a volar tu imaginación.</p>
+                        <p>Lo más destacable de este desarrollo es que está completamente operativo usando del lado backend a firebase con lo cual todos los datos registros son guardados en una base de datos con la innovadora modalidad real time que permite actualización de datos inmediata en todos los dispositivos conectados.</p>
+                        <a class="btn btn-outline-warning btn-sm" href="https://tareas-angular.firebaseapp.com/">Ver Demo</a>
+                    </div>
+                </div>
+                <!-- fin de articulos -->
+                <!-- inicio de paginacion -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="nosotros.html">Siguiente</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <!-- fin de paginacion -->            </div>
+            <!-- inicio de aside -->
+            <div class="col-12 col-md-3">
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Sobre mi...</h5>
+                      <p class="card-text">Me gustan los retos, siempre dejan nuevos aprendizaje porque no soy fanatico de un lenguaje, ni me caso con uno en particular mi pasion es por la programacion en la tecnologia mas innovadora.</p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Reflexion del dia</h5>
+                      <p class="card-text">Mas que memorizar un lenguaje es importante desarrollar la lógica para resolver problemas que tenga impacto en la sociedad, ese es nuestro perfil de carrera.</p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Sobre Angular</h5>
+                      <p class="card-text">Actualmente me encuentro desarrollando en Angular, un potente framework del lado frontend avalado por Google para el desarrollo de SPA.</p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">¿Backend o Frontend?</h5>
+                      <p class="card-text">Aunque mis primeros proyectos personales fueron orientados a desarrollar en PHP y Mysql hoy día estoy aprendiendo sobre lenguajes y framawork del frontend y la meta es full-stack.</p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Informacion de Contacto</h5>
+                      <p class="card-text">Si deseas ponerte en contacto conmigo puedes hacerlo a través del correo: jose2889@gmail.com y gustosamente te atenderé a la brevedad posible.</p>
+                    </div>
+                  </div>
+            </div>
+            <!-- fin de aside -->
+        </div>
+    </div>
+    <!-- fin del main -->
+    <!-- inicio de footer -->
+    <div class="container-fluid bg-dark text-center text-white">
+        <P>Desarrollado por Jose Hernandez</P>
+        <p>Practica de curso de Bootstrap by Bluuweb!</p>
+    </div>
+    <!-- fin de footer -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
